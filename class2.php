@@ -16,8 +16,8 @@ class D2{
 	public function circle($r) {
 	 	$pi = self::$pi;        //访问静态常量
 		$area = $pi*$r*$r;
-		$girth = 2*$pi*$r;
-		echo "the circle's area(面积) is  ".$area."<br>";
+		$girth = 2*$pi*$r;                     //各种公式....
+		echo "the circle's area(面积) is  ".$area."<br>";                  
 		echo "the circle's girth(周长) is  ".$girth."<br>";
 	}
 	public function square($r){
