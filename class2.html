@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计算</title>
+</head>
+<body>
+	<?php 
+	require("class2.php");
+	$D2 = new D2();
+$D3 = new D3();
+$shape = $_POST['type'];
+$r = $_POST['side'];
+switch ($shape) {
+	case 0:
+		$D2->square($r);
+		break;
+	case 1:
+		$D3->cube($r);
+		break;
+	case 2:
+		$D2->circle($r);
+		break;
+	case 3:
+		$D3->ball($r);
+		break;
+	
+	default:
+		# code...
+		break;
+}
+echo "开始没有转换字符集....所以...";
+	 ?>
+	
+</body>
+</html>
